@@ -383,6 +383,8 @@ usage (void)
           "  -ul=COUNT          Limit user memory to COUNT pages.\n"
 #endif
           );
+    // Print the backtrace before shutting down
+  debug_backtrace(); 
   shutdown_power_off ();
 }
 
